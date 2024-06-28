@@ -1,1 +1,69 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Northern Lights">
+            <div class="description">Northern Lights over a forest.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Forest">
+            <div class="description">A lush green forest in summer.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Fjords">
+            <div class="description">Stunning fjords in Norway.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains">
+            <div class="description">Snow-capped mountains at sunrise.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.w3schools.com/w3images/mountains2.jpg" alt="Landscape Mountains">
+            <div class="description">A panoramic view of mountain landscape.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.w3schools.com/w3images/underwater.jpg" alt="Underwater">
+            <div class="description">Underwater view of coral reefs.</div>
+        </div>
+    </div>
+</body>
+</html>
